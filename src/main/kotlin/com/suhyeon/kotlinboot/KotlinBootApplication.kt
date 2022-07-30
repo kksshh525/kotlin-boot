@@ -1,5 +1,6 @@
 package com.suhyeon.kotlinboot
 
+import org.springframework.boot.Banner
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
@@ -7,5 +8,7 @@ import org.springframework.boot.runApplication
 class KotlinBootApplication
 
 fun main(args: Array<String>) {
-	runApplication<KotlinBootApplication>(*args)
+	runApplication<KotlinBootApplication>(*args) {
+		setBannerMode(Banner.Mode.OFF)
+	}
 }
